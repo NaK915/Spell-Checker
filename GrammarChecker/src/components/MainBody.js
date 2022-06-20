@@ -23,7 +23,7 @@ class MainBody extends React.Component {
     const data={
       "data": this.state.userInput
     }
-    axios.post(`http://127.0.0.1:5000/incomingData`, data)
+    axios.post(`https://lit-dusk-61946.herokuapp.com/incomingData`, data)
     .then(res => {
       console.log(res);
       console.log(res.data);
