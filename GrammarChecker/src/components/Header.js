@@ -7,7 +7,7 @@ class Header extends React.Component {
       <header id="header">
         {" "}
         <h2 id="site-name">
-        Grammar Checker
+        Spell Checker
         </h2>
       </header>
     );
