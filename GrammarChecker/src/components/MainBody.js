@@ -16,10 +16,8 @@ class MainBody extends React.Component {
     await this.setState({
       userInput: val,
     });
-    console.log(this.state.userInput)
   }
   async sendData() {
-    console.log('ajdvhbf',this.state.userInput);
     const data={
       "data": this.state.userInput
     }
@@ -41,8 +39,8 @@ class MainBody extends React.Component {
             <div className="about-text">
               <h2>About Us</h2>
               <h3>
-                This website is a grammar correction tool that can help you
-                correct any grammatical mistakes. Be it a document draft, an
+                This website is a Spelling Correction tool that can help you
+                correct any spelling mistakes. Be it a document draft, an
                 email to your boss, or just a small school assignment, we've got
                 you covered.
               </h3>
@@ -61,8 +59,8 @@ class MainBody extends React.Component {
           <div className="sub-container">
             <div className="about-text">
               <h3>
-                Grammar can be a cumbersone issue, right? <br />
-                Click on this button to correct any grammatical mistakes.
+                Spellings can be a cumbersone issue, right? <br />
+                Click on this button to correct any spelling mistakes.
               </h3>
               <button onClick={this.sendData}>
                 Submit
